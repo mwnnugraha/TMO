@@ -23,6 +23,18 @@
                             $no = 1;
                             @endphp
                             @foreach($pemilik as $data)
+                            @if($loop->first)
+                            <tr>
+                                <td>{{$no}}</td>
+                                <td>{{$data->name}}</td>
+                                <td>{{$data->email}}</td>
+                                <td>{{$data->password}}</td>
+                                <td><a href="{{route('pemilik.edit',$data->id)}}" class="btn btn-warning btn-sm" >Ubah</a></td>
+                            @php
+                            $no++;
+                            @endphp
+                            </tr>
+                            @else
                             <tr>
                                 <td>{{$no}}</td>
                                 <td>{{$data->name}}</td>
@@ -36,6 +48,7 @@
                                 $no++;
                                 @endphp
                             </tr>
+                            @endif
                             @endforeach
                         </table>
                     </div>

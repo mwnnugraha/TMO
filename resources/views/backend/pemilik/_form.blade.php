@@ -1,5 +1,4 @@
 
-                            
                             <div class="form-group{{ $errors->has('name') ? 'has-error' : '' }}">
                             <div>
                                 {!! Form::label('name','Nama',['class'=>'col-md-4 col-md-offset-2']) !!}
@@ -32,7 +31,7 @@
                                 
                             </div>
                                 <div class="col-md-4">
-                                    {!! Form::text('password',null,['class'=>'img-rounded img-responsive']) !!}
+                                    {!! Form::Password('password',null,['class'=>'img-rounded img-responsive']) !!}
                                     {!! $errors->first('password','<p class="help-block">:message</p>') !!}
                                 </div>
                            <br><br>

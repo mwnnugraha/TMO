@@ -32,6 +32,9 @@ $alumni=App\alumni::all();
   </head>
   <body>
 
+
+
+
     <!-- Header Section Start -->
     <header id="hero-area" data-stellar-background-ratio="0.5">    
       <!-- Navbar Start -->
@@ -71,6 +74,9 @@ $alumni=App\alumni::all();
           </div>
         </div>
 
+
+
+
         <!-- Mobile Menu Start -->
         <ul class="mobile-menu">
            <li>
@@ -100,6 +106,9 @@ $alumni=App\alumni::all();
         </ul>
         <!-- Mobile Menu End -->
 
+
+
+
       </nav>
       <!-- Navbar End -->   
       <div class="container">      
@@ -114,6 +123,10 @@ $alumni=App\alumni::all();
       </div>           
     </header>
     <!-- Header Section End --> 
+
+
+
+
 
     <!-- Services Section Start -->
     <section id="services" class="section">
@@ -130,6 +143,9 @@ $alumni=App\alumni::all();
     </section>
     <!-- Services Section End -->
 
+
+
+
     <!-- Features Section Start -->
     <section id="features" class="section" data-stellar-background-ratio="0.2">
       <div class="container">
@@ -139,18 +155,14 @@ $alumni=App\alumni::all();
                 <img src="{{asset('img/'.$komponen->foto_kaprog)}}" alt="Client Testimonoal" 
                 style="height: 250px; width: 250px" />
                 <div class="testimonial-text">
-              
                 <div class="social-icons">
                   <h3>{{$komponen->nama_kaprog}}</h3>
                   <span>{{$komponen->jabatan_kaprog}}</span><br><br>
-                    <div class="social-icons">
-                      
+                    <div class="social-icons">  
                   <ul>
-                
                     <li class="facebook"><a href="https://www.facebook.com/smkassalaam/"><i class="fa fa-facebook"></i></a></li>
                     <li class="twitter"><a href="https://twitter.com/smkassalaam/"><i class="fa fa-twitter"></i></a></li>
                     <li class="instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                   
                   </ul>
                   </div>
                   <h3>{{$komponen->target_kurikulum}}</h4>
@@ -172,9 +184,8 @@ $alumni=App\alumni::all();
           <p class="section-subtitle">
         </div>
         <div class="row">          
-          <div class="col-md-12">
-          </div>
-
+            <div class="col-md-12">
+        </div>
           <!-- Portfolio Recent Projects -->
           <div id="prestasi" class="row">
             @foreach($prestasi as $data)
@@ -191,7 +202,6 @@ $alumni=App\alumni::all();
             </div>
              @endforeach
             </div>
-           
           </div>
         </div>
       </div>
@@ -211,17 +221,16 @@ $alumni=App\alumni::all();
           <h2 class="section-title">Fasilitas</h2>
           <p class="section-subtitle">
         </div>
-        <div class="row">          
-          <div class="col-md-12">
+          <div class="row">          
+            <div class="col-md-12">
           </div>
-
           <!-- Portfolio Recent Projects -->
           <div id="portfolio" class="row">
             @foreach($fasilitas as $data)
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
               <div class="portfolio-item">
                 <div class="shot-item">
-                <img src="{{asset('image/'.$data->gambar)}}" alt="" style="height: 50px width: 50px"> 
+                <img src="{{asset('image/'.$data->gambar)}}" alt="" style="height: 50px width: 50px">
                   <a class="overlay lightbox" href="{{asset('image/'.$data->gambar)}}">
                     <i class="lnr lnr-eye item-icon"></i>
                   </a>
@@ -231,7 +240,6 @@ $alumni=App\alumni::all();
             </div>
              @endforeach
             </div>
-           
           </div>
         </div>
       </div>
@@ -266,36 +274,29 @@ $alumni=App\alumni::all();
 
 
 
-    
-
     <!-- testimonial Section Start -->
     <div id="testimonial" class="section" data-stellar-background-ratio="0.1">
       <div class="container">
-     <center> <h4>Testimoni Alumni</h4></center><br>
+       <center> <h4>Testimoni Alumni</h4></center><br>
         <div class="row justify-content-md-center">
           <div class="col-md-12">
             <div class="touch-slider owl-carousel owl-theme">
-           
-
-
-              
-               
             @foreach ($alumni as $data)
               <div class="testimonial-item">
-                <img src="{{asset('image/'.$data->foto)}}" alt="Client Testimonoal"  style="height: 200px; width: 200px"/>
+                <img src="{{asset('image/'.$data->foto)}}" alt="Client Testimonoal"  style="height: 300px; width: 250px"/>
                 <div class="testimonial-text">
                   <p>{!!$data->testimoni!!}</p>
                   <h3>{!!$data->nama!!}</h3>
                   
                 </div>
               </div>
-          @endforeach
-
+            @endforeach
             </div>
           </div>
         </div>        
       </div>
     </div>
+    
 
 
 
@@ -303,29 +304,8 @@ $alumni=App\alumni::all();
     <!-- testimonial Section Start -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="section" data-stellar-background-ratio="-0.2">      
-      <div class="contact-form">
-        <div class="container">
-          <div class="row">     
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-              <div class="contact-us">
-                <h3>Contact With us</h3>
-                <div class="contact-address">
-                  <p class="phone">Phone: <span>(022 5420-220)</span></p>
-                  <p class="email">E-mail: <span>(info@smkassalaambandung.sch.id)</span></p>
-                </div>
-                <div class="social-icons">
-                  <ul>
-                    <li class="facebook"><a href="https://www.facebook.com/smkassalaam/"><i class="fa fa-facebook"></i></a></li>
-                    <li class="twitter"><a href="https://twitter.com/smkassalaam/"><i class="fa fa-twitter"></i></a></li>
-                   
-                  </ul>
-                </div>
-              </div>
-            </div>     
-          </div>
-        </div>
-      </div>           
+    <section class="pege-section cta"><center>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.367365297508!2d107.59072401449804!3d-6.965916594967511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e8deccecb6f1%3A0x658cc60fbe5017b9!2sSMK+Assalaam+Bandung!5e0!3m2!1sid!2sid!4v1521346970309" width="1000" height="700" frameborder="0" style="border:0" allowfullscreen></iframe></center>
     </section>
     <!-- Contact Section End -->
 
